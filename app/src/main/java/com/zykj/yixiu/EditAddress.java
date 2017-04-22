@@ -20,6 +20,12 @@ private EditText edit_et_add;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editaddress);
+        edit_et_name= (EditText) findViewById(R.id.edit_et_name);
+        edit_tv_tel= (TextView) findViewById(R.id.edit_tv_tel);
+        edit_et_add= (EditText) findViewById(R.id.edit_et_add);
+        edit_et_add.setOnClickListener(this);
+        edit_tv_tel.setOnClickListener(this);
+        edit_et_name.setOnClickListener(this);
 
 
     }
@@ -27,6 +33,14 @@ private EditText edit_et_add;
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.edit_et_name:
+
+                break;
+            case R.id.edit_tv_tel:
+                break;
+            case R.id.edit_et_add:
+                break;
+
 
 
         }

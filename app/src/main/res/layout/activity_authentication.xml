@@ -70,6 +70,7 @@
                     android:layout_height="wrap_content"
                     android:src="@mipmap/u130"/>
                 <ImageView
+                    android:id="@+id/au_iv_zheng"
                     android:padding="3dp"
                     android:layout_width="42dp"
                     android:layout_height="42dp"
@@ -120,6 +121,7 @@
                     android:layout_height="wrap_content"
                     android:src="@mipmap/u130"/>
                 <ImageView
+                    android:id="@+id/au_iv_fan"
                     android:padding="3dp"
                     android:layout_width="42dp"
                     android:layout_height="42dp"

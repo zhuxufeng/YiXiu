@@ -92,8 +92,8 @@
             android:layout_height="wrap_content"
             android:text="详细地址"/>
 
-        <TextView
-            android:id="@+id/edit_tv_add"
+        <EditText
+            android:id="@+id/edit_et_add"
             android:layout_weight="1"
             android:textSize="20sp"
            android:layout_marginLeft="12dp"
