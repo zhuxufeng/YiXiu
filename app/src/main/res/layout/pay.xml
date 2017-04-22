@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="支付详情"
+    TopBar:centerColor="#00cccc"
+
+
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u1331"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#da7018"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单支付成功"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u1514_line"/>
+        <TextView
+            android:layout_weight="1"
+           android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="订单评价"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u1514_line"/>
+    </LinearLayout>
+
+
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="提交评价"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/u1782"/>
+
+</LinearLayout>

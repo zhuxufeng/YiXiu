@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="编辑地址"
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+<LinearLayout
+    android:background="@mipmap/u28"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"/>
+
+    <EditText
+        android:id="@+id/edit_et_name"
+        android:layout_marginLeft="25dp"
+         android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的姓名"/>
+</LinearLayout>
+    <LinearLayout
+        android:background="@mipmap/u28"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"/>
+
+        <TextView
+            android:id="@+id/edit_tv_tel"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="13874678412"/>
+        <ImageView
+            android:src="@mipmap/u96"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@mipmap/u28"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址"/>
+
+        <TextView
+            android:id="@+id/edit_tv_add"
+            android:layout_weight="1"
+            android:textSize="20sp"
+           android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请输入您的详细地址"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@mipmap/u28"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设为默认"/>
+
+    <FrameLayout
+        android:layout_marginLeft="220dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u551"/>
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u553"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>

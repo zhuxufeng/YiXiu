@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="支付宝"
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+<LinearLayout
+    android:id="@+id/ali_ll_acc"
+    android:background="@mipmap/u28"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付宝账号"
+        />
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/u94_line"/>
+    <EditText
+        android:id="@+id/ali_et_acc"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的支付宝账号"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ali_ll_name"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/u28"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝姓名"
+            android:textSize="20sp"
+            />
+        <ImageView
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u94_line"/>
+        <EditText
+            android:id="@+id/ali_et_name"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择您的银行卡号"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ali_bt_ok"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="确认"
+    android:textSize="22sp"
+    android:textColor="#ffff"
+    android:background="@mipmap/u134"
+    android:gravity="center"/>
+
+
+
+</LinearLayout>

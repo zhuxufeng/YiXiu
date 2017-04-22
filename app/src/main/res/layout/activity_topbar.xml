@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+
+    TopBar:rightColor="#00cccc"
+    TopBar:rightSize="30sp"
+
+    TopBar:centerColor="#00cccc"
+    TopBar:centerText="一修哥"
+
+
+     >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+
+        ></include>
+
+</LinearLayout>
+

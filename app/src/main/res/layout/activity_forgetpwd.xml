@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/u4"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="忘记密码"
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+
+
+
+
+      <EditText
+          android:id="@+id/for_et_tel"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:hint="请输入手机号"
+          android:textSize="20sp"
+          android:padding="10dp"
+          />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/u28"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+
+        <EditText
+            android:id="@+id/for_et_yzm"
+          android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"/>
+        <Button
+            android:id="@+id/for_bt_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/u2471"
+            android:text="获取验证码"
+            android:textColor="#ffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/for_bt_next"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:textSize="22sp"
+        android:textColor="#ffff"
+        android:background="@mipmap/u134"
+        android:gravity="center"/>
+
+
+</LinearLayout>

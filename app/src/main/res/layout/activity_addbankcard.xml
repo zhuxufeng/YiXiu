@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="银行卡"
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u1907"/>
+        <ImageView
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/u1909"/>
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingLeft="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="农业银行"
+                android:textColor="#ffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:text="储蓄卡"/>
+        </LinearLayout>
+
+        <ImageView
+            android:paddingRight="55dp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u1915"/>
+
+        <TextView
+            android:layout_marginLeft="125dp"
+
+            android:layout_gravity="bottom"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:text="****"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_marginLeft="175dp"
+            android:layout_gravity="bottom"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:text="****"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_gravity="bottom"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:text="****"
+            android:layout_marginLeft="235dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_gravity="bottom"
+            android:paddingBottom="16dp"
+           android:layout_marginLeft="285dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:text="1989"
+            android:textSize="26sp"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/u400"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <FrameLayout
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/u509"/>
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:src="@mipmap/u132"/>
+        </FrameLayout>
+        <EditText
+            android:textSize="20sp"
+         android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="添加银行卡"/>
+    </RelativeLayout>
+
+</LinearLayout>

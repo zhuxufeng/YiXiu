@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="家电维修"
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+<LinearLayout
+    android:background="@mipmap/u28"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="品牌"/>
+    <ImageView
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/u94_line"/>
+    <EditText
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请选择您的家电品牌"/>
+    <ImageView
+        android:src="@mipmap/u96"
+        android:layout_gravity="right|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:background="@mipmap/u28"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="型号"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u94_line"/>
+        <EditText
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择您的家电型号"/>
+        <ImageView
+            android:src="@mipmap/u96"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+   <LinearLayout
+       android:background="@mipmap/u28"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+
+           android:padding="10dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+           <TextView
+               android:textSize="20sp"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="故障"/>
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/u94_line"/>
+           <EditText
+               android:layout_weight="1"
+               android:textSize="16sp"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="请选择您的家电故障点"/>
+
+           <ImageView
+               android:src="@mipmap/u96"
+               android:layout_gravity="right|center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:scaleType="fitXY"
+           android:src="@mipmap/u30_line"
+           />
+       <TextView
+
+          android:gravity="center_vertical|bottom"
+          android:layout_marginLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:text="请对您家电的故障进行简单的描述"/>
+   </LinearLayout>
+
+
+
+</LinearLayout>

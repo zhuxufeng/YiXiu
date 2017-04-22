@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="我的资料"
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+
+<LinearLayout
+    android:id="@+id/me_ll_changepicture"
+    android:background="@mipmap/u28"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <TextView
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头像"/>
+<FrameLayout
+    android:layout_marginRight="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/me_iv_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/u1096"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/u1098"/>
+</FrameLayout>
+
+
+    <ImageView
+        android:src="@mipmap/u96"
+        android:layout_gravity="right|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:background="@mipmap/u28"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u94_line"/>
+        <EditText
+            android:id="@+id/me_et_name"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的姓名"/>
+        <ImageView
+            android:src="@mipmap/u96"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+   <LinearLayout
+       android:background="@mipmap/u28"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+
+           android:padding="10dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+           <TextView
+               android:textSize="20sp"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="性别"/>
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/u94_line"/>
+        <!--    <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/u1108"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"/>
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_weight="1"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <ImageView
+
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/u1112"/>
+               <TextView
+                    android:layout_marginLeft="10dp"
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="女"/>
+           </LinearLayout>-->
+           <RadioGroup
+              android:layout_margin="10dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <RadioButton
+                   android:id="@+id/me_rb_boy"
+                   android:layout_weight="1"
+                   android:checked="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="男"/>
+               <RadioButton
+                   android:id="@+id/me_rb_girl"
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="女"/>
+           </RadioGroup>
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/me_ll_tel"
+           android:layout_marginTop="5dp"
+           android:background="@mipmap/u28"
+           android:padding="10dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+           <TextView
+               android:textSize="22sp"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="手机"/>
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_marginLeft="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/u94_line"/>
+           <TextView
+               android:layout_weight="1"
+               android:textSize="20sp"
+               android:layout_marginRight="10dp"
+               android:gravity="right|center_vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="18947893453"/>
+           <ImageView
+               android:src="@mipmap/u96"
+               android:layout_gravity="right|center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="5dp"
+           android:background="@mipmap/u28"
+           android:padding="10dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+           <TextView
+               android:textSize="22sp"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="地区"/>
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_marginLeft="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/u94_line"/>
+           <TextView
+               android:id="@+id/me_tv_dq"
+               android:layout_weight="1"
+               android:textSize="20sp"
+               android:layout_marginRight="10dp"
+               android:gravity="right|center_vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="黑龙江  哈尔滨"/>
+           <ImageView
+               android:src="@mipmap/u96"
+               android:layout_gravity="right|center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+   </LinearLayout>
+    <Button
+        android:id="@+id/me_bt_ok"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:background="@mipmap/u134"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>

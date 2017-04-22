@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TopBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<com.zykj.yixiu.TopBar
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    TopBar:leftbg="@mipmap/u312"
+
+
+    TopBar:centerText="认证信息 "
+    TopBar:centerColor="#00cccc"
+    >
+
+</com.zykj.yixiu.TopBar>
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </include>
+   <TextView
+       android:padding="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="手持身份证认证"
+       android:textSize="20sp"
+       android:textColor="#f58a38"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/u400"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/u1378"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00cccc"
+                android:text="正面"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/u123"
+            android:gravity="center">
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/u130"/>
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@mipmap/u132"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/u400"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/u1378"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00cccc"
+                android:text="反面"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/u123"
+            android:gravity="center">
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/u130"/>
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@mipmap/u132"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="22sp"
+        android:textColor="#ffff"
+        android:background="@mipmap/u134"
+        android:gravity="center"/>
+
+
+</LinearLayout>

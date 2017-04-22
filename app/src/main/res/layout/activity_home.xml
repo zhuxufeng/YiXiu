@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/home_tv_city"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="哈尔滨"
+            android:textColor="#00cccc"
+           android:gravity="center"/>
+        <TextView
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#00cccc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:text="一修哥" />
+        <ImageView
+            android:id="@+id/home_im_per"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+           android:layout_weight="1"
+            android:src="@mipmap/u74"/>
+
+    </LinearLayout>
+
+    <!--主页顶部背景-->
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+<!-- 手机   开始-->
+    <LinearLayout
+        android:id="@+id/ll_mob"
+        android:background="@mipmap/u8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:src="@mipmap/u40"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机"
+            android:textSize="25sp"/>
+
+        <FrameLayout
+        android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/u66"/>
+            <ImageView
+                android:padding="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/u64"/>
+        </FrameLayout>
+
+ <TextView
+     android:layout_gravity="bottom"
+     android:gravity="right"
+     android:paddingRight="20dp"
+     android:layout_marginBottom="5dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="mobile"
+     android:textSize="30sp"/>
+
+    </LinearLayout>
+    <!-- 手机   结束-->
+
+    <!-- 电脑  结束-->
+    <LinearLayout
+        android:id="@+id/ll_com"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@mipmap/u8"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+               android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="computer"
+                android:textSize="30sp"/>
+            <FrameLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/u70"/>
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/u72"/>
+            </FrameLayout>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电脑"
+                android:textSize="25sp"/>
+
+            <ImageView
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/u42"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- 电脑   结束-->
+    <!-- 家电   开始-->
+    <LinearLayout
+        android:id="@+id/ll_app"
+        android:background="@mipmap/u8"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/u44"/>
+            <ImageView
+
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="bottom|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/u46"/>
+        </FrameLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家电"
+            android:textSize="25sp"/>
+        <FrameLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/u66"/>
+            <ImageView
+                android:padding="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/u64"/>
+        </FrameLayout>
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="appliance"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <!-- 家电   结束-->
+
+
+
+</LinearLayout>

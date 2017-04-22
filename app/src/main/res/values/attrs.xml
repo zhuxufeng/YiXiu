@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 左侧标题文字-->
+    <declare-styleable name="TopBar">
+
+        <attr name="leftbg" format="reference"/>
+        <!-- 右侧标题文字-->
+        <attr name="rightText" format="string"/>
+        <attr name="rightSize" format="dimension"/>
+        <attr name="rightColor" format="color|reference"/>
+        <!--中间-->
+
+        <attr name="centerText" format="string"/>
+        <attr name="centerColor" format="color"/>
+    </declare-styleable>
+</resources>
