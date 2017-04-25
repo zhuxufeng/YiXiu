@@ -74,8 +74,10 @@ private Button bt_log;
                             Intent intent = new Intent(MainActivity.this, Home.class);
                             startActivity(intent);
                         }else {
+                            StyledDialog.dismissLoading();
                             //失败
                             Y.t("登录失败");
+
                         }
                     }
                 });
@@ -86,8 +88,13 @@ private Button bt_log;
 
                     }
                 });
+              /*  String tel=et_tel.getText().toString();
 
-
+                if("13604600261".equals(tel)){
+                    Intent i=new Intent(this,Home.class);
+                    startActivity(i);
+                }
+*/
                 break;
             case R.id.tv_fgpwd:
                 Intent intent1=new Intent(this,ForgetPwd.class);

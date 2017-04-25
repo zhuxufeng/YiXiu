@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         android:text="头像"/>
 <FrameLayout
+    android:id="@+id/me_fr_icon"
     android:layout_marginRight="10dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
@@ -47,6 +48,7 @@
         android:layout_height="50dp"
         android:src="@mipmap/u1096"/>
     <ImageView
+       android:id="@+id/me_iv_con"
         android:layout_gravity="center"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -73,13 +75,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="姓名"/>
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/u94_line"/>
+
         <EditText
+            android:background="@null"
             android:id="@+id/me_et_name"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
@@ -88,6 +86,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="请输入您的姓名"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/u94_line"/>
+
         <ImageView
             android:src="@mipmap/u96"
             android:layout_gravity="right|center"
@@ -160,6 +166,7 @@
            </LinearLayout>-->
            <RadioGroup
               android:layout_margin="10dp"
+               android:id="@+id/rg"
                android:orientation="horizontal"
                android:layout_width="match_parent"
                android:layout_height="wrap_content">
@@ -199,14 +206,16 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:src="@mipmap/u94_line"/>
-           <TextView
+           <EditText
+               android:id="@+id/me_et_tel"
+               android:background="@null"
                android:layout_weight="1"
                android:textSize="20sp"
                android:layout_marginRight="10dp"
                android:gravity="right|center_vertical"
                android:layout_width="wrap_content"
                android:layout_height="match_parent"
-               android:text="18947893453"/>
+               android:hint="18947893453"/>
            <ImageView
                android:src="@mipmap/u96"
                android:layout_gravity="right|center"

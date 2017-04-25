@@ -12,7 +12,7 @@ public class EditAddress extends AppCompatActivity implements View.OnClickListen
     //编辑姓名
 private EditText edit_et_name;
     //编辑电话号
-    private TextView edit_tv_tel;
+    private EditText edit_et_tel;
     //编辑地址
 
 private EditText edit_et_add;
@@ -21,10 +21,10 @@ private EditText edit_et_add;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editaddress);
         edit_et_name= (EditText) findViewById(R.id.edit_et_name);
-        edit_tv_tel= (TextView) findViewById(R.id.edit_tv_tel);
+        edit_et_tel= (EditText) findViewById(R.id.edit_et_tel);
         edit_et_add= (EditText) findViewById(R.id.edit_et_add);
         edit_et_add.setOnClickListener(this);
-        edit_tv_tel.setOnClickListener(this);
+        edit_et_tel.setOnClickListener(this);
         edit_et_name.setOnClickListener(this);
 
 
@@ -36,9 +36,11 @@ private EditText edit_et_add;
             case R.id.edit_et_name:
 
                 break;
-            case R.id.edit_tv_tel:
+            case R.id.edit_et_tel:
                 break;
             case R.id.edit_et_add:
+                Intent add=new Intent(this,Aaaaa.class);
+                startActivity(add);
                 break;
 
 

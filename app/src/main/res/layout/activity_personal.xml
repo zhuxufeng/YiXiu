@@ -5,15 +5,15 @@
     android:orientation="vertical">
 
     <FrameLayout
-
+     android:background="#30ece7"
         android:layout_width="match_parent"
         android:layout_height="135dp">
 
         <FrameLayout
 
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@mipmap/u654">
+            android:layout_height="135dp"
+            android:background="#30ece7">
 
             <ImageView
 
@@ -32,16 +32,16 @@
 
             <ImageView
                 android:id="@+id/i2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:src="@mipmap/u553" />
 
             <ImageView
 
                 android:id="@+id/per_iv_picture"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:src="@mipmap/u668" />
 

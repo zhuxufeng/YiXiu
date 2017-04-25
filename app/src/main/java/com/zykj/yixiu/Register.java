@@ -89,23 +89,26 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                         String message = JSON.parseObject(result).getString("message");
                         if (Y.getRespCode(result)) {
                             Y.t("注册成功" + message);
+                            Y.i("注册成功" + message);
                             //把成功后的data 取出来
-                            String data = Y.getData(result);
+                            String data =   Y.getData(result);
+                            Y.i(data);
+                            Y.TOKEN=data;
+
                             //成功之后跳转带密码的页面
-                            Intent intent = new Intent(Register.this, PassWord.class);
-                            //把返回的data传到密码的页面
-                            intent.putExtra("data", data);
+                            Y.i(data+"+----------------------------+++");
                             //跳转
+                            Intent intent = new Intent(Register.this, PassWord.class);
+                                      ;
                             startActivity(intent);
                         } else {
                             //失败
                             Y.t("--11" + message);
+                            Y.i("注册+++++++" + message);
                         }
 
                     }
                 });
-
-
                 break;
 
         }

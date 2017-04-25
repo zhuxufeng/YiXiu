@@ -47,6 +47,8 @@ public class YURL {
     public static   final  String  FIND_ALL_PROVINCE=HOST+"findallprovince";
     //根据省Id获得省列表
     public static   final  String  FIND_CITY_BY_PROCODE=HOST+"findCityByProCode";
+    //设置密码
+    public static   final  String  SET_PASSWORD=HOST+"setpassword";
 
 
 }

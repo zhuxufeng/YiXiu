@@ -52,5 +52,8 @@ dependencies {
     compile files('libs/BaiduLBS_Android.jar')
     //DiaogUtil
     compile 'com.github.hss01248:DialogUtil:1.0.7'
+    /*log日志*/
+    compile 'com.orhanobut:logger:1.15'
+
 
 }

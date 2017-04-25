@@ -38,15 +38,13 @@
           />
 
 
-
-
-        <EditText
-            android:id="@+id/pwd_et_newpwd"
-            android:textSize="20sp"
-             android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="请重新输入您的密码"/>
+    <EditText
+        android:id="@+id/pwd_et_newpwd"
+        android:textSize="20sp"
+         android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请重新输入您的密码"/>
 
 
     <Button

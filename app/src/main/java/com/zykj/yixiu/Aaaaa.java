@@ -37,13 +37,13 @@ import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
 
 public class Aaaaa extends Activity implements View.OnClickListener {
     private static final String TAG = "Aaaaa";
-    private Button textView;
-    private EditText editText;
-    private MapView mapView;
+    private Button textView;//按钮
+    private EditText editText;//位置
+    private MapView mapView;//地图控件
     private LatLng latLng;
     private boolean isFirst = true;
     private LocationClient client;
-    private BaiduMap baiduMap;
+    private BaiduMap baiduMap;//百度地图
 
 
     @Override
@@ -51,6 +51,7 @@ public class Aaaaa extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.aaaaaaaaaaa);
+        //控件
 
         editText = (EditText) findViewById(R.id.etttt);
         mapView = (MapView) findViewById(R.id.baiduvv);
@@ -59,15 +60,16 @@ public class Aaaaa extends Activity implements View.OnClickListener {
         textView.setOnClickListener(this);
         initLocation();
         seletMap();
+//        jieMa(latLng);
 
     }
 
-
+//解码
     public void jieMa(LatLng latLng1) {
         GeoCoder geoCoder = GeoCoder.newInstance();
         geoCoder.reverseGeoCode(new ReverseGeoCodeOption().location(latLng1));
-        baiduMap.clear();
-        BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher);
+        baiduMap.clear();//清空
+        BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher);//图标
         OverlayOptions overlayOptions = new MarkerOptions().icon(bitmapDescriptor).position(latLng1);
         baiduMap.addOverlay(overlayOptions);
         geoCoder.setOnGetGeoCodeResultListener(new OnGetGeoCoderResultListener() {

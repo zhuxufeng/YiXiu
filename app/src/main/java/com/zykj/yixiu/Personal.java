@@ -3,6 +3,7 @@ package com.zykj.yixiu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -10,7 +11,10 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 
 import org.xutils.http.RequestParams;
+import org.xutils.image.ImageOptions;
+import org.xutils.x;
 
+import java.io.File;
 import java.util.List;
 
 import cn.finalteam.galleryfinal.GalleryFinal;
@@ -40,6 +44,9 @@ public class Personal extends AppCompatActivity implements View.OnClickListener 
         ll_address.setOnClickListener(this);
         ll_mywollet.setOnClickListener(this);
         per_iv_picture.setOnClickListener(this);
+        if(!TextUtils.isEmpty(Y.user.getIcon())){
+            Glide.with(this).load(YURL.HOST+Y.user.getIcon()).into(per_iv_picture);
+        }
 
     }
 
@@ -53,18 +60,20 @@ public class Personal extends AppCompatActivity implements View.OnClickListener 
                 GalleryFinal.openGallerySingle(100, new GalleryFinal.OnHanlderResultCallback() {
                     @Override
                     public void onHanlderSuccess(int reqeustCode, List<PhotoInfo> resultList) {
-                        if (reqeustCode == 100) {
-                            if (resultList != null) {
-                                for (PhotoInfo info : resultList) {
-                                    Glide.with(Personal.this).load(info.getPhotoPath()).into(per_iv_picture);
-                                    RequestParams rp = new RequestParams(YURL.UPLOADICON);
-                                    rp.addBodyParameter("icon", info.getPhotoPath());
+                       final String path=resultList.get(0).getPhotoPath();
+                  RequestParams rp = new RequestParams(YURL.UPLOADICON);
+                                    rp.addBodyParameter("icon", new File(path));
                                     rp.addBodyParameter("token", Y.user.getToken());
+                        rp.setMultipart(true);
                                     Y.post(rp, new Y.MyCommonCall<String>() {
                                         @Override
                                         public void onSuccess(String result) {
                                             if (Y.getRespCode(result)) {
+
                                                 Y.user.setIcon(Y.getData(result));
+                                                ImageOptions op=new ImageOptions.Builder()
+                                                        .setCircular(true).build();
+                                                x.image().bind(per_iv_picture,path,op);
                                             } else {
                                                 Y.t("上传失败");
                                             }
@@ -75,11 +84,11 @@ public class Personal extends AppCompatActivity implements View.OnClickListener 
 
 
                                 }
-                            }
 
-                        }
 
-                    }
+
+
+
 
                     @Override
                     public void onHanlderFailure(int requestCode, String errorMsg) {

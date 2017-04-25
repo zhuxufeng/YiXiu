@@ -39,6 +39,7 @@
         android:text="姓名"/>
 
     <EditText
+        android:background="@null"
         android:id="@+id/edit_et_name"
         android:layout_marginLeft="25dp"
          android:layout_gravity="center"
@@ -61,8 +62,8 @@
             android:layout_height="wrap_content"
             android:text="手机号"/>
 
-        <TextView
-            android:id="@+id/edit_tv_tel"
+        <EditText
+            android:id="@+id/edit_et_tel"
             android:layout_weight="1"
             android:textSize="20sp"
             android:layout_marginRight="10dp"
@@ -93,6 +94,7 @@
             android:text="详细地址"/>
 
         <EditText
+            android:background="@null"
             android:id="@+id/edit_et_add"
             android:layout_weight="1"
             android:textSize="20sp"

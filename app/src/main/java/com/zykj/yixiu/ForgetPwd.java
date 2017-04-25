@@ -1,5 +1,6 @@
 package com.zykj.yixiu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -47,6 +48,8 @@ private EditText for_et_tel,for_et_yzm;
                 break;
 
             case R.id.for_bt_next:
+                Intent intent=new Intent(ForgetPwd.this,PassWord.class);
+                startActivity(intent);
                 break;
 
         }

@@ -7,7 +7,7 @@ package com.zykj.yixiu;
 public class User {
     /**
      * icon :
-     * phone : 18246177353
+     * phone : 13514520853
      * sex :
      * idcard_image1 :
      * idcard_image2 :
@@ -16,7 +16,7 @@ public class User {
      * score : 0
      * jpush_id :
      * type : 0
-     * password : xiaobang57
+     * password : 123123
      * city :
      * username :
      * regtime : 2017-04-21 11:11:13

@@ -31,7 +31,7 @@ public  class Y {
     //user的类
 
     public static User user;
-
+    public static String TOKEN;
 
 
 
@@ -50,7 +50,8 @@ public  class Y {
      */
     public static  void i(String  str){
         if(isLog)
-            Log.i(TAG, "i: "+str);
+            com.orhanobut.logger.Logger.i("i"+str);
+           /* Log.i(TAG, "i: "+str);*/
     }
 
 
@@ -109,6 +110,7 @@ public  class Y {
      * @return
      */
     public static Callback.Cancelable post(RequestParams params, MyCommonCall<String> call){
+        i(params.toString());//打印信息的地址
         return   x.http().post(params, call);
     }
     /**
