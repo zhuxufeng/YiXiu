@@ -6,15 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class Addressd extends AppCompatActivity implements View.OnClickListener {
-    private RelativeLayout re_addaddr;
+public class Address extends AppCompatActivity implements View.OnClickListener {
+    private RelativeLayout re_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addressmanager);
-        re_addaddr= (RelativeLayout) findViewById(R.id.re_addaddr);
-        re_addaddr.setOnClickListener(this);
+        setContentView(R.layout.item_addaddr);
+        re_add= (RelativeLayout) findViewById(R.id.re_add);
+        re_add.setOnClickListener(this);
 
     }
 
@@ -22,8 +22,8 @@ public class Addressd extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()){
 
-            case R.id.re_addaddr:
-                Intent intent=new Intent(this,Address.class);
+            case R.id.re_add:
+                Intent intent=new Intent(this,EditAddress.class);
                 startActivity(intent);
                 break;
         }

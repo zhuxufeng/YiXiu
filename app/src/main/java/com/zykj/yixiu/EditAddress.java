@@ -40,12 +40,24 @@ private EditText edit_et_add;
                 break;
             case R.id.edit_et_add:
                 Intent add=new Intent(this,Aaaaa.class);
-                startActivity(add);
+                startActivityForResult(add,1);
+
+
                 break;
 
 
 
         }
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==1&&resultCode==1){
+            String add = data.getStringExtra("add");
+            edit_et_add.setText(add);
+
+        }
     }
 }

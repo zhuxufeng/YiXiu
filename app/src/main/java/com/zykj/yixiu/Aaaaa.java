@@ -1,6 +1,7 @@
 package com.zykj.yixiu;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,13 +38,14 @@ import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
 
 public class Aaaaa extends Activity implements View.OnClickListener {
     private static final String TAG = "Aaaaa";
-    private Button textView;//按钮
+    //private Button textView;//按钮
     private EditText editText;//位置
     private MapView mapView;//地图控件
     private LatLng latLng;
     private boolean isFirst = true;
     private LocationClient client;
     private BaiduMap baiduMap;//百度地图
+    private Button bt_ok;
 
 
     @Override
@@ -52,15 +54,27 @@ public class Aaaaa extends Activity implements View.OnClickListener {
         SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.aaaaaaaaaaa);
         //控件
-
+        bt_ok= (Button) findViewById(R.id.bt_ok);
         editText = (EditText) findViewById(R.id.etttt);
         mapView = (MapView) findViewById(R.id.baiduvv);
-        textView = (Button) findViewById(R.id.btttt);
+     //   textView = (Button) findViewById(R.id.btttt);
         baiduMap = mapView.getMap();
-        textView.setOnClickListener(this);
+        //textView.setOnClickListener(this);
         initLocation();
         seletMap();
 //        jieMa(latLng);
+        bt_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String a=editText.getText().toString().trim();
+                Intent ok=getIntent();
+                ok.putExtra("add",a);
+               setResult(1,ok);
+                finish();
+
+
+            }
+        });
 
     }
 
