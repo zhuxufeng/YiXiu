@@ -39,9 +39,9 @@ public class YURL {
     public static   final  String  FIND_APPLIANCE_CATEGORY=HOST+"findApplianceCategory";
     //uploadicon  上传头像
     public static   final  String  UPLOADICON=HOST+"uploadIcon";
-    //register
+    //register  注册
     public static   final  String  REGISTER=HOST+"register";
-    //login
+    //login   登录
     public static   final  String  LOGIN=HOST+"login";
     //findallprovince 获得所有省
     public static   final  String  FIND_ALL_PROVINCE=HOST+"findallprovince";
@@ -49,6 +49,26 @@ public class YURL {
     public static   final  String  FIND_CITY_BY_PROCODE=HOST+"findCityByProCode";
     //设置密码
     public static   final  String  SET_PASSWORD=HOST+"setpassword";
+    //增加地址
+    public static   final  String  ADD_ADDRESS=HOST+"addaddress";
+    //查询地址
+    public static   final  String  SELECT_ADDRESS=HOST+"selectAddress";
+    //设置默认地址
+    public static   final  String  DEF_ADDRESS=HOST+"defAddress";
+
+    //上传身份证
+    public static   final  String  UP_LOAD_ID_CARD=HOST+"uploadIdCard";
+    //删除地址
+    public static   final  String  DEL_ADDRESS=HOST+"delAddress";
+
+    //绑定支付宝
+    public static   final  String  BIND_ALIPAY=HOST+"bindAliPay";
+    //设置用户信息
+    public static   final  String  SET_USER_INFO=HOST+"setUserInfo";
+
+
+
+
 
 
 }

@@ -123,7 +123,7 @@ public class Aaaaa extends Activity implements View.OnClickListener {
     private void initLocation() {
         client = new LocationClient(this);//创建定位对象
         LocationClientOption option = new LocationClientOption();//配置
-        option.setCoorType("bd09ll");
+        option.setCoorType("bd09ll");//百度地图定位
         option.setOpenGps(true);
         option.setScanSpan(5000);
         option.setIsNeedAddress(true);

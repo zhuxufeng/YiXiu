@@ -119,7 +119,7 @@ public class Personal extends AppCompatActivity implements View.OnClickListener 
 
                 break;
             case R.id.ll_address:
-                Intent inadd = new Intent(this, Addressd.class);
+                Intent inadd = new Intent(this, AddressItem.class);
                 startActivity(inadd);
 
                 break;

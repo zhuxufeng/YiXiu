@@ -63,16 +63,7 @@ private RadioButton me_rb_boy,me_rb_girl;
 
 
 
-        if(!TextUtils.isEmpty(Y.user.getUsername())){
-            me_et_name.setText(Y.user.getUsername());
 
-
-
-        }
-
-        if(!TextUtils.isEmpty(Y.user.getIcon())){
-            Glide.with(this).load(YURL.HOST+Y.user.getIcon()).into(me_iv_icon);
-        }
 
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -91,6 +82,32 @@ private RadioButton me_rb_boy,me_rb_girl;
                 Y.user.setSex(sex);
             }
         });
+        if (!TextUtils.isEmpty(Y.user.getSex())){
+            switch (Y.user.getSex()){
+                case "男":
+                    me_rb_boy.setChecked(true);
+                    break;
+                case "女":
+                    me_rb_girl.setChecked(true);
+                    break;
+            }
+        }
+        if(!TextUtils.isEmpty(Y.user.getUsername())){
+            me_et_name.setText(Y.user.getUsername());
+        }
+        if(!TextUtils.isEmpty(Y.user.getIcon())){
+            Glide.with(this).load(YURL.HOST+Y.user.getIcon()).into(me_iv_icon);
+        }
+        if(!TextUtils.isEmpty(Y.user.getPhone())){
+           me_et_tel.setText(Y.user.getPhone());
+        }
+        if(!TextUtils.isEmpty(Y.user.getSex())){
+
+        }
+        if (!TextUtils.isEmpty(Y.user.getProvince())||!TextUtils.isEmpty(Y.user.getCity())){
+            me_tv_dq.setText(Y.user.getProvince()+Y.user.getCity());
+        }
+
 
     }
 
@@ -168,12 +185,13 @@ private RadioButton me_rb_boy,me_rb_girl;
                 }
                 RequestParams pr=new RequestParams(YURL.UPLOADICON);
                 pr.addBodyParameter("name",name);
-                // pr.addBodyParameter("province",dq);
+                pr.addBodyParameter("province",dq);
                 pr.addBodyParameter("sex",sex);
                 pr.addBodyParameter("phone",tel);
                 Y.post(pr,new Y.MyCommonCall<String>() {
                     @Override
                     public void onSuccess(String result) {
+
 
                     }
                 });

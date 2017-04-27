@@ -53,14 +53,14 @@
         <activity android:name=".ForgetPwd" />
         <activity android:name=".Personal" />
         <activity android:name=".Me" />
-        <activity android:name=".Addressd" />
+        <activity android:name=".AddressManager" />
         <activity android:name=".MyWollet" />
         <activity android:name=".CallService" />
         <activity android:name=".YiXiuMap" />
 <activity android:name=".EditAddress"/>
         <activity android:name=".PassWord"/>
         <activity android:name=".ChangeNum"/>
-  <activity android:name=".Address"/>
+  <activity android:name=".AddressItem"/>
     </application>
 
 </manifest>

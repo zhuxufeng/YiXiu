@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class Addressd extends AppCompatActivity implements View.OnClickListener {
+public class AddressManager extends AppCompatActivity implements View.OnClickListener {
     private RelativeLayout re_addaddr;
 
     @Override
@@ -23,7 +23,7 @@ public class Addressd extends AppCompatActivity implements View.OnClickListener 
         switch (v.getId()){
 
             case R.id.re_addaddr:
-                Intent intent=new Intent(this,Address.class);
+                Intent intent=new Intent(this,AddressItem.class);
                 startActivity(intent);
                 break;
         }

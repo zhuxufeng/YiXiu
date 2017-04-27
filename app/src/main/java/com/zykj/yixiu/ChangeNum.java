@@ -9,12 +9,13 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class ChangeNum extends AppCompatActivity implements View.OnClickListener {
+    //
     private Button chan_bt_ok;
     private EditText chan_et_tel;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_brand);
+        setContentView(R.layout.activity_changephonenumber);
         chan_et_tel= (EditText) findViewById(R.id.chan_et_tel);
         chan_bt_ok= (Button) findViewById(R.id.chan_bt_ok);
         chan_et_tel.setOnClickListener(this);
@@ -30,10 +31,16 @@ public class ChangeNum extends AppCompatActivity implements View.OnClickListener
 
 
 
+
                 break;
             case R.id.chan_bt_ok:
                 Intent tel=new Intent(ChangeNum.this,Me.class);
-                startActivity(tel);
+                String a=chan_et_tel.getText().toString().trim();
+                Intent ok=getIntent();
+                ok.putExtra("tel",a);
+                setResult(0,ok);
+                finish();
+
                 break;
 
 
@@ -41,4 +48,5 @@ public class ChangeNum extends AppCompatActivity implements View.OnClickListener
         }
 
     }
+
 }

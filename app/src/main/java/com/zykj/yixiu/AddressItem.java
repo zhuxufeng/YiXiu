@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class Address extends AppCompatActivity implements View.OnClickListener {
+public class AddressItem extends AppCompatActivity implements View.OnClickListener {
     private RelativeLayout re_add;
 
     @Override
